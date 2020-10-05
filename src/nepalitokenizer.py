@@ -6,7 +6,7 @@ A text tokenizer class , fully written from scratch.
 import re
 import string
 
-files = open('./datafile/STOP_WORDS.txt' , 'r',encoding='utf-8')
+files = open('../datafile/STOP_WORDS.txt' , 'r',encoding='utf-8')
 stop_words = files.readlines()
 files.close()
 

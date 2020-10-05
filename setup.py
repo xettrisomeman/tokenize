@@ -6,7 +6,7 @@ with open("README.md" , "r" , encoding='utf-8') as fh:
 
 setup(
     name='nepalitokenizer',
-    version='1.8.1.4',
+    version='1.8.1.5',
     description = 'Tokenizes Nepali Text',
     py_modules=['nepalitokenizer'], 
     package_dir ={'': 'src'},
