@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup , find_packages
 
 with open("README.md" , "r" , encoding='utf-8') as fh:
     long_description = fh.read()
@@ -6,10 +6,10 @@ with open("README.md" , "r" , encoding='utf-8') as fh:
 
 setup(
     name='nepalitokenizer',
-    version='1.8.1.5',
+    version='1.8.6.0',
     description = 'Tokenizes Nepali Text',
-    py_modules=['nepalitokenizer'], 
-    package_dir ={'': 'src'},
+    py_modules=['nepalitokenizer'],
+    package_dir={'':'src'},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -20,7 +20,8 @@ setup(
         'Operating System :: POSIX',
         'Programming Language :: Python'
     ],
-    package_data={'datafile':['STOP_WORDS.txt',]},
+    packages = find_packages(exclude='env'),
+    include_package_data=True,
     long_description = long_description,
     long_description_content_type = "text/markdown",
     extras_require={
