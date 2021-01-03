@@ -4,14 +4,14 @@
 ## Installation Guide
 
 ```python
-pip install nepali_tokenizer
+pip install nepalitokenizer
 ```
 
 ## Usage
 
 
 ```python
-from nepali_tokenizer import NepaliTokenizer
+from nepalitokenizer import NepaliTokenizer
 
 tokenize = NepaliTokenizer()
 print(tokenize.tokenizer('के छ खबर तिम्रो ? '))
